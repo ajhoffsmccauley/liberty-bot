@@ -1,0 +1,27 @@
+{
+	"name": "liberty-bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/bot.js",
+	"scripts": {
+		"test": "node src/bot.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GamearooCodes/liberty-bot.git"
+	},
+	"author": "Gamearoo_Codes",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/GamearooCodes/liberty-bot/issues"
+	},
+	"homepage": "https://github.com/GamearooCodes/liberty-bot#readme",
+	"dependencies": {
+		"axios": "^0.24.0",
+		"discord.js": "^13.3.1",
+		"moment": "^2.29.1",
+		"mongoose": "^5.13.7",
+		"winston": "^3.3.3",
+		"winston-console-format": "^1.0.8"
+	}
+}
