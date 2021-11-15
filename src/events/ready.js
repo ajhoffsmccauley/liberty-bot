@@ -1,6 +1,6 @@
 module.exports = {
 	name: "ready",
-	async execute(version) {
+	async run(version) {
 		console.log(`Ready! On Version: ${version}`);
 	},
 };
