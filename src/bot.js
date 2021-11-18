@@ -9,7 +9,7 @@ const client = new Client({
 client.events = new Collection();
 client.commands = new Collection();
 
-["event"].forEach((hand) => {
+["event", "command"].forEach((hand) => {
 	require(`./utils/${hand}`)(client);
 });
 

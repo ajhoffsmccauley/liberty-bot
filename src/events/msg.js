@@ -9,13 +9,13 @@ module.exports = {
 
 		let args = message.content.substring(prefix.length).split(" ");
 
-		switch (args[0]) {
-			case "hello":
-				message.reply({
-					content: "hello",
-					allowedMentions: { repliedUser: false },
-				});
-				break;
-		}
+		const extras = {
+			hello: "Hello",
+		};
+
+		const cmd = args[0].toLowerCase();
+		const command = client.commands.get(`${cmd}`);
+		if (!command) return;
+		command.command(client, message, args, extras);
 	},
 };
