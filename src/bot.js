@@ -1,6 +1,7 @@
 const { Client, Intents, Collection, MessageEmbed } = require("discord.js");
 const { version, prefix } = require("../config");
-const { token } = require("../secure/token");
+const { token, mongourl } = require("../secure/token");
+const mongoose = require("mongoose");
 
 const client = new Client({
 	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
@@ -12,6 +13,14 @@ client.commands = new Collection();
 ["event", "command"].forEach((hand) => {
 	require(`./utils/${hand}`)(client);
 });
+
+mongoose
+	.connect(mongourl, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+		useFindAndModify: true,
+	})
+	.then(console.log("Mongo Activated.. On Bot!"));
 
 client.on("ready", async () => {
 	await client.events.get("ready").run(version);
