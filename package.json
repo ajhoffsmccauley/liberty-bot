@@ -21,6 +21,7 @@
 		"discord.js": "^13.3.1",
 		"moment": "^2.29.1",
 		"mongoose": "^5.13.7",
+		"systeminformation": "^5.9.15",
 		"winston": "^3.3.3",
 		"winston-console-format": "^1.0.8"
 	}
