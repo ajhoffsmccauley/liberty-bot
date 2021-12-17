@@ -3,3 +3,4 @@
 config.js
 package-lock.json
 *.zip
+yarn.lock
