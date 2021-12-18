@@ -566,10 +566,10 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-systeminformation@^5.9.15:
-  version "5.9.15"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.9.15.tgz#0f02fa6175cfe5c46b6b50618f851a046cf61cdb"
-  integrity sha512-0tUYPXffFEsme8n/iTAMk09jpGgqtaGf46QOx7oFmiON9zDUQCahfSymQaCRr4tsq9BkKolaOzp8nqMVNrKIqQ==
+systeminformation@^5.9.17:
+  version "5.9.17"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.9.17.tgz#9b0c405346fcd9ad37a95df4990eefa3d164d7a3"
+  integrity sha512-hbJtPsG63PCst4PLXFq8hycbkeR5oGDquRowfLK0gNX7nJ1qx3tCbsWu83OL4GP1dkcLMKsVooLUn5x2K1Epgg==
 
 text-hex@1.0.x:
   version "1.0.0"
