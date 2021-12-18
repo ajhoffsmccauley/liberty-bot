@@ -13,6 +13,7 @@ module.exports = {
 		if (!args[3])
 			return message.reply({
 				content: "Please ask a 3 word or more question!",
+				allowedMentions: { repliedUser: false },
 			});
 
 		await axios
